@@ -120,6 +120,7 @@ public class JMusicBot
                         new ClearCmd(bot),
                         new StopCmd(bot),
                         new LeaveCmd(bot),
+                        new JoinCmd(bot),
                         new VolumeCmd(bot),
                         
                         new PrefixCmd(bot),
