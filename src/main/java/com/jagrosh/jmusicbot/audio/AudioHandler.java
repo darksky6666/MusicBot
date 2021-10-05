@@ -100,6 +100,13 @@ public class AudioHandler extends AudioEventAdapter implements AudioSendHandler
         audioPlayer.stopTrack();
         //current = null;
     }
+
+    public void clearQueue()
+    {
+        queue.clear();
+        defaultQueue.clear();
+        //current = null;
+    }
     
     public boolean isMusicPlaying(JDA jda)
     {

@@ -80,7 +80,7 @@ public class JMusicBot
         Bot bot = new Bot(waiter, config, settings);
         
         AboutCommand aboutCommand = new AboutCommand(Color.BLUE.brighter(),
-                                "a music bot that is [easy to host yourself!](https://github.com/jagrosh/MusicBot) (v"+version+")",
+                                "a music bot modified from main fork (https://github.com/darksky6666/MusicBot) (v"+version+")",
                                 new String[]{"High-quality music playback", "FairQueue™ Technology", "Easy to host yourself"},
                                 RECOMMENDED_PERMS);
         aboutCommand.setIsAuthor(false);
@@ -117,6 +117,7 @@ public class JMusicBot
                         new PlaynextCmd(bot),
                         new RepeatCmd(bot),
                         new SkiptoCmd(bot),
+                        new ClearCmd(bot),
                         new StopCmd(bot),
                         new LeaveCmd(bot),
                         new VolumeCmd(bot),
