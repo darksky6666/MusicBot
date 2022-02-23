@@ -1,11 +1,11 @@
-name: GitHub Actions Maven Build Example
+name: GitHub Actions Maven Build
 
 on:
   push:
     branches: [ master ]
 jobs:
 
-  build-on-ubuntu:
+  auto-build-job:
     # The type of runner that the job will run on
     runs-on: windows-latest
 
@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 17
+          distribution: 'temurin'
     
       - name: Step 3 - Have GitHub Actions Build Maven Project
         run: |
